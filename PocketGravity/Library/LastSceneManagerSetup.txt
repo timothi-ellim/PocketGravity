@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/KeijiroAssets/Sonar/Test.unity
+- path: Assets/_PocketGravity/ARMainScene.unity
   isLoaded: 1
   isActive: 1

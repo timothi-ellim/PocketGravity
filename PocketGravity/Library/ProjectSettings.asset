@@ -11,8 +11,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Unity Technologies
-  productName: Unity ARKit Plugin
+  companyName: Timothi Ellim
+  productName: Pocket Gravity
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -151,7 +151,7 @@ PlayerSettings:
     Android: com.Company.ProductName
     Standalone: unity.Unity Technologies.Native Rendering Plugin Example
     Tizen: com.Company.ProductName
-    iOS: com.unity.arkitscene
+    iOS: com.timothiellim.pocketgravity
     tvOS: com.Company.ProductName
   buildNumber:
     iOS: 0
@@ -246,7 +246,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: d920106389e684fbab743ab9cea6bbe8, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -356,7 +356,7 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: AR BABY
+  cameraUsageDescription: PocketGravityARCamera
   locationUsageDescription: 
   microphoneUsageDescription: 
   switchNetLibKey: 
