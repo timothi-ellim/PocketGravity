@@ -19,8 +19,9 @@ public class ScoreZone : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			IM.AddScore ();
 		}
+
 		if (other.gameObject.tag == "Bullet") {
-			Instantiate (TextPrefab, other.gameObject.transform.position, Quaternion.identity);
+			Instantiate (TextPrefabShoot, other.gameObject.transform.position, Quaternion.identity);
 			other.gameObject.SetActive (false);
 			IM.AddScoreShoot ();
 		}

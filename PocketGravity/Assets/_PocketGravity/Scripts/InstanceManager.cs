@@ -8,6 +8,7 @@ using UnityEngine.XR.iOS;
 public class InstanceManager : MonoBehaviour {
 
 	public GameObject startMenu;
+	public GameObject searchUI;
 	public GameObject gameUI;
 	public GameObject gameOverUI;
 	public GameObject reticle;
@@ -20,6 +21,8 @@ public class InstanceManager : MonoBehaviour {
 
 	public Text ScoreText;
 	public Text TimerText;
+
+	public AudioManager AM;
 
 	private int score; 
 	private float startTime;
@@ -34,6 +37,7 @@ public class InstanceManager : MonoBehaviour {
 	}
 
 	void Start(){
+		AM = GameObject.FindGameObjectWithTag ("AM").GetComponent<AudioManager> ();
 		score = 0;
 		ScoreText.text = score.ToString();
 	}
@@ -52,10 +56,17 @@ public class InstanceManager : MonoBehaviour {
 	public void StartGame(){
 		startMenu.SetActive (false);
 		gameStarted = true;
-
-		PGM.SetActive (true);
 		HCP.SetActive (true);
+		searchUI.SetActive (true);
+		AM.Play(0);
+		//gameUI.SetActive (true);
+	}
+
+	public void StartThisGame(){
+		searchUI.SetActive (false);
+		PGM.SetActive (true);
 		gameUI.SetActive (true);
+		AM.Play (1);
 	}
 
 	private void GameOver(){
@@ -64,6 +75,7 @@ public class InstanceManager : MonoBehaviour {
 		PGM.SetActive (false);
 		HCP.SetActive (false);
 		gameOverUI.SetActive (true);
+		AM.Play (5);
 	}
 
 	public void Restart(){
@@ -76,6 +88,7 @@ public class InstanceManager : MonoBehaviour {
 		if (!gameOverState) {  
 			score += 100;	
 			ScoreText.text = score.ToString ();
+			AM.Play (2);
 		}
 	}
 
@@ -83,6 +96,7 @@ public class InstanceManager : MonoBehaviour {
 		if (!gameOverState) {  
 			score += 1;	
 			ScoreText.text = score.ToString ();
+			AM.Play (3);
 		}
 	}
 

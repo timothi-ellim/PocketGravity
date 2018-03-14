@@ -9,6 +9,7 @@ TagManager:
   - Manager
   - GravityCube
   - Bullet
+  - AM
   layers:
   - Default
   - TransparentFX

@@ -13,8 +13,10 @@ namespace UnityEngine.XR.iOS
 		public bool spawned = false;
 		float offset;
 		public GameObject generatePlane;
+		private InstanceManager IM;
 
 		void Start(){
+			IM = GameObject.FindGameObjectWithTag ("Manager").GetComponent<InstanceManager> ();
 			offset = 10f;
 		}
 
@@ -62,6 +64,7 @@ namespace UnityEngine.XR.iOS
 
 						Instantiate (MazePrefab, hit.point, Quaternion.identity);
 						Destroy (generatePlane);
+						IM.StartThisGame ();
 						spawned = true;
 					}
 				}

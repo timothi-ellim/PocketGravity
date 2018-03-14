@@ -1,2 +1,6 @@
 Base path: /Applications/Unity2017_2/Unity_2017_2.app/Contents
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=14 insize=3273 outsize=6293 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1526 outsize=897 ok=1
