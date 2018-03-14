@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreZone : MonoBehaviour {
 
 	private InstanceManager IM;
+	public GameObject HitPrefab;
 	public GameObject TextPrefab;
 	public GameObject TextPrefabShoot;
 
@@ -16,6 +17,7 @@ public class ScoreZone : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "GravityCube") {
 			Instantiate (TextPrefab, other.gameObject.transform.position, Quaternion.identity);
+			Instantiate (HitPrefab, other.gameObject.transform.position, Quaternion.identity);
 			other.gameObject.SetActive (false);
 			IM.AddScore ();
 		}
