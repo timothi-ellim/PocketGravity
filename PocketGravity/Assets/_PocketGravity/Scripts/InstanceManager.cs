@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.XR.iOS;
-using EZCameraShake;
 
 public class InstanceManager : MonoBehaviour {
 
@@ -55,7 +54,6 @@ public class InstanceManager : MonoBehaviour {
 	}
 
 	public void StartGame(){
-		CameraShaker.Instance.ShakeOnce (4f, 4f, 0.1f, 1f);
 		startMenu.SetActive (false);
 		gameStarted = true;
 		HCP.SetActive (true);
@@ -78,7 +76,7 @@ public class InstanceManager : MonoBehaviour {
 		PGM.SetActive (false);
 		HCP.SetActive (false);
 		gameOverUI.SetActive (true);
-		AM.Play (5);
+		AM.Play (4);
 	}
 
 	public void Restart(){
@@ -89,7 +87,6 @@ public class InstanceManager : MonoBehaviour {
 		
 	public void AddScore(){
 		if (!gameOverState) {  
-			CameraShaker.Instance.ShakeOnce (4f, 4f, 0.1f, 1f);
 			score += 100;	
 			ScoreText.text = score.ToString ();
 			AM.Play (2);
