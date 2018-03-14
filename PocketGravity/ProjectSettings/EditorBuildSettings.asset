@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_PocketGravity/ARMainScene.unity
     guid: 902dfd9db447f45f7a1aa69039373923
+  - enabled: 0
+    path: Assets/_PocketGravity/ARAImarch.unity
+    guid: 754ebe67f876044aea0ded2180ac4218
+  - enabled: 0
+    path: Assets/PortalGit/_Scenes/MainScene.unity
+    guid: 821e4344a07b04b408744f19c6e560fd

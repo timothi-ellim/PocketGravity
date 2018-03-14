@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1e6fff1cb99a44334af7d29184bda0ce
+timeCreated: 1520991420
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Elianto
+  fontNames:
+  - Elianto
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
