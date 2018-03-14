@@ -8,13 +8,13 @@ public class GravityCube : MonoBehaviour {
 
 	void Start () {
 		objTrans = GetComponent<Transform> ();
-		objTrans.Rotate(Random.Range (0, 90), Random.Range (0, 90), Random.Range (0, 90));
+		objTrans.Rotate(Random.Range (0, 125), Random.Range (0, 125), Random.Range (0, 125));
 	}
 
 	// Use this for initialization
 	void OnEnable () {
 		objTrans = GetComponent<Transform> ();
-		objTrans.Rotate(Random.Range (0, 90), Random.Range (0, 90), Random.Range (0, 90));
+		objTrans.Rotate(Random.Range (0, 125), Random.Range (0, 125), Random.Range (0, 125));
 	}
 		
 }

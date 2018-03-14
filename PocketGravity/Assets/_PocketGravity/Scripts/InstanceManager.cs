@@ -9,7 +9,11 @@ public class InstanceManager : MonoBehaviour {
 
 	public GameObject startMenu;
 	public GameObject gameUI;
+	public GameObject gameOverUI;
+	public GameObject reticle;
+
 	public bool gameStarted = false;
+	private bool gameOverState = false;
 
 	public GameObject PGM;
 	public GameObject HCP;
@@ -20,7 +24,7 @@ public class InstanceManager : MonoBehaviour {
 	private int score; 
 	private float startTime;
 
-	public float timer = 240;
+	public float timer = 300;
 
 
 	void Awake(){
@@ -38,6 +42,7 @@ public class InstanceManager : MonoBehaviour {
 		if (gameStarted) {
 			if (timer < 0) {
 				timer = 0;
+				GameOver ();
 			}
 			timer -= Time.deltaTime;
 			TimerText.text = timer.ToString ("f1");
@@ -52,10 +57,33 @@ public class InstanceManager : MonoBehaviour {
 		HCP.SetActive (true);
 		gameUI.SetActive (true);
 	}
+
+	private void GameOver(){
+		gameOverState = true;
+		reticle.SetActive (false);
+		PGM.SetActive (false);
+		HCP.SetActive (false);
+		gameOverUI.SetActive (true);
+	}
+
+	public void Restart(){
+		Scene scene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(scene.buildIndex);
+	}
+
 		
 	public void AddScore(){
-		score += 100;	
-		ScoreText.text = score.ToString();
+		if (!gameOverState) {  
+			score += 100;	
+			ScoreText.text = score.ToString ();
+		}
+	}
+
+	public void AddScoreShoot(){
+		if (!gameOverState) {  
+			score += 1;	
+			ScoreText.text = score.ToString ();
+		}
 	}
 
 }

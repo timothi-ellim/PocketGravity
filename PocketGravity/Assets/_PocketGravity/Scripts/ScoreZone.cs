@@ -6,6 +6,7 @@ public class ScoreZone : MonoBehaviour {
 
 	private InstanceManager IM;
 	public GameObject TextPrefab;
+	public GameObject TextPrefabShoot;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,11 @@ public class ScoreZone : MonoBehaviour {
 			Instantiate (TextPrefab, other.gameObject.transform.position, Quaternion.identity);
 			other.gameObject.SetActive (false);
 			IM.AddScore ();
+		}
+		if (other.gameObject.tag == "Bullet") {
+			Instantiate (TextPrefab, other.gameObject.transform.position, Quaternion.identity);
+			other.gameObject.SetActive (false);
+			IM.AddScoreShoot ();
 		}
 	}
 }

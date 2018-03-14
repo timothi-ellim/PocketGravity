@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class PocketGravManager : MonoBehaviour {
 
-	//public bool fireOn;
+	AudioSource audiosfx;
+
+	void Start(){
+		audiosfx = GetComponent<AudioSource> ();
+	}
 
 	// Update is called once per frame
 	void Update () {
@@ -17,7 +21,7 @@ public class PocketGravManager : MonoBehaviour {
 			bullet.transform.rotation = Camera.main.transform.rotation;
 			bullet.transform.position = Camera.main.transform.position;
 			rb.AddForce (Camera.main.transform.forward * 50f);
-			//AudioHere
+			audiosfx.Play ();
 		}
 	}
 }

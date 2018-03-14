@@ -8,6 +8,7 @@ TagManager:
   - HitCube
   - Manager
   - GravityCube
+  - Bullet
   layers:
   - Default
   - TransparentFX
