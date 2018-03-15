@@ -1415,7 +1415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU HAVE 300s TO SCORE POINTS
+  m_Text: YOU HAVE 150s TO SCORE POINTS
 --- !u!222 &613420446
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1596,16 +1596,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 739872707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5625, y: -123.84512, z: 0}
+  m_LocalPosition: {x: -0.5625, y: -131.3451, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1180158730}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.37100002}
+  m_AnchorMin: {x: 0, y: 0.35782176}
   m_AnchorMax: {x: 1, y: 0.43869746}
-  m_AnchoredPosition: {x: -0.5625, y: -1.1000061}
-  m_SizeDelta: {x: 1.125, y: 2.8999996}
+  m_AnchoredPosition: {x: -0.5625, y: -0.10000038}
+  m_SizeDelta: {x: 1.1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &739872709
 MonoBehaviour:
@@ -1639,7 +1639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MOVE AROUND AND HAVE FUN!
+  m_Text: "MOVE AROUND, USE YOUR ENVIRONMENT\n AND HAVE FUN!"
 --- !u!222 &739872710
 CanvasRenderer:
   m_ObjectHideFlags: 0
