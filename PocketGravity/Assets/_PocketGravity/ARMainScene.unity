@@ -3106,7 +3106,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GET +100 POINTS FOR EACH PINK BALL IN GOAL
+  m_Text: GET +100 POINTS FOR EACH PINK CUBE IN PORTAL
 --- !u!222 &1474491245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7160,7 +7160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GET +1 POINTS FOR EACH CUE BALL IN GOAL
+  m_Text: GET +1 POINTS FOR EACH CUE BALL IN PORTAL
 --- !u!222 &2121576181
 CanvasRenderer:
   m_ObjectHideFlags: 0
